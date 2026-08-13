@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile-header.svg" alt="Yifu Zhao — Data Scientist / Analytics Engineer" width="100%" />
+  <img src="assets/profile-header-v4.svg" alt="Yifu Zhao — Data Scientist / Analytics Engineer" width="100%" />
 </p>
 
 <p align="center">
