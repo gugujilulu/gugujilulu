@@ -3,67 +3,40 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/"><img src="https://img.shields.io/badge/LinkedIn-0B1110?style=for-the-badge&logo=linkedin&logoColor=7FF8EB" alt="LinkedIn" /></a>
-  <a href="mailto:zhaoyifu88@gmail.com"><img src="https://img.shields.io/badge/Email-0B1110?style=for-the-badge&logo=gmail&logoColor=7FF8EB" alt="Email" /></a>
-  <a href="https://github.com/gugujilulu/healthcare-risk-model-validation"><img src="https://img.shields.io/badge/Flagship%20Project-0B1110?style=for-the-badge&logo=github&logoColor=7FF8EB" alt="Flagship Project" /></a>
+  <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:zhaoyifu88@gmail.com">Email</a> &nbsp;·&nbsp;
+  <a href="https://github.com/gugujilulu/healthcare-risk-model-validation">Flagship Project</a>
 </p>
 
-<table>
-<tr>
-<td width="58%" valign="top">
-
-### Focus
+## Focus
 
 I work across **machine learning validation, healthcare data, risk analytics, and analytical systems**. Recent work includes external validation, calibration, prediction-level local adaptation, robustness analysis, and temporal validation of a breast cancer risk model with BC Cancer.
 
 My earlier industry experience spans **risk operations and product systems at Ping An Finserve**, giving me a practical view of how models, data structures, workflows, and business decisions connect.
 
-</td>
-<td width="42%" valign="top">
-
-### Core Stack
-
-`Python` `SQL` `R`  
-`scikit-learn` `LightGBM`  
-`Model Validation` `Calibration`  
-`Data Modeling` `Risk Analytics`  
-`pytest` `GitHub Actions`
-
-</td>
-</tr>
-</table>
-
----
+**Python · SQL · R · scikit-learn · LightGBM · Model Validation · Calibration · Data Modeling · Risk Analytics · pytest · GitHub Actions**
 
 ## Selected Work
 
 ### Healthcare Risk Model Validation
 
-> **External validation · calibration · local model updating · robustness · temporal validation**
+**External validation · calibration · local model updating · robustness · temporal validation**
 
 Public-safe evidence package and runnable reconstruction of mammography-based breast cancer risk-model validation work originating from my **BC Cancer / UBC MDS capstone**, with later independent extensions.
 
-| Scale | Evaluation | Updating & robustness |
-|---|---|---|
-| **438,571** eligible screening exams | ROC AUC · Brier · E/O · calibration slope/intercept | Logistic updating · LightGBM |
-| **1–5 year** cumulative risk horizons | Decile calibration · subgroup analysis | Patient-cluster bootstrap |
-| Patient-level dependence preserved | First-exam sensitivity | Future-period temporal validation |
+The retrospective analysis covered up to **438,571 eligible screening exams** across **1–5 year cumulative risk horizons**, with evaluation spanning ROC AUC, Brier score, E/O ratio, calibration slope/intercept, decile calibration, subgroup analysis, and patient-cluster bootstrap.
 
-**Technical evidence:** synthetic longitudinal cohort · censoring-aware endpoint construction · leakage controls · reproducible pipeline · tests + CI
+The extension explored prediction-level updating with regularized logistic regression and LightGBM, alongside first-exam sensitivity analysis, leakage auditing, decision-curve analysis, and future-period temporal validation.
+
+The public repository separates curated aggregate evidence from a fully runnable synthetic reconstruction, with reproducible endpoint construction, patient-level splitting, calibration, robustness analysis, tests, and CI.
 
 **[Explore the repository →](https://github.com/gugujilulu/healthcare-risk-model-validation)**
 
----
-
 ## Professional Context
 
-| Context | What it represents |
-|---|---|
-| **BC Cancer / UBC MDS** | Healthcare risk-model validation, calibration, local model updating, temporal validation |
-| **Ping An Finserve** | Nationwide risk operations, structured workflows, analytics systems, product management |
-| **Qunar / Lilith Games** | Platform product systems and internal operational tooling |
-
----
+**BC Cancer / UBC MDS** — healthcare risk-model validation, calibration, local model updating, and temporal validation  
+**Ping An Finserve** — nationwide risk operations, structured workflows, analytics systems, and product management  
+**Qunar / Lilith Games** — platform product systems and internal operational tooling
 
 <p align="center">
   <sub>Machine Learning Validation · Healthcare Data · Risk Analytics · Reproducible Analytical Systems</sub>
