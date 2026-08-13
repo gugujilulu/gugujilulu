@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/" title="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/5DE39D" width="27" height="27" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="mailto:zhaoyifu88@gmail.com" title="Email"><img src="https://cdn.simpleicons.org/gmail/5DE39D" width="27" height="27" alt="Email" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/gugujilulu/healthcare-risk-model-validation" title="Featured technical project"><img src="https://cdn.simpleicons.org/github/5DE39D" width="27" height="27" alt="Featured technical project" /></a>
+  <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/" title="LinkedIn"><img src="assets/linkedin.svg" width="32" height="32" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="mailto:zhaoyifu88@gmail.com" title="Email"><img src="assets/email.svg" width="32" height="32" alt="Email" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/gugujilulu/healthcare-risk-model-validation" title="Featured technical project"><img src="assets/github.svg" width="32" height="32" alt="Featured technical project" /></a>
 </p>
 
 ## Focus
