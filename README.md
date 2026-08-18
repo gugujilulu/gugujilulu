@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/" title="LinkedIn"><img src="assets/linkedin.svg" width="32" height="32" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;
-  <a href="mailto:zhaoyifu88@gmail.com" title="Email"><img src="assets/email.svg" width="32" height="32" alt="Email" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="mailto:zhaoyifu88@outlook.com" title="Email"><img src="assets/email.svg" width="32" height="32" alt="Email" /></a>&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/gugujilulu/healthcare-risk-model-validation" title="Featured technical project"><img src="assets/github.svg" width="32" height="32" alt="Featured technical project" /></a>
 </p>
 
