@@ -1,13 +1,14 @@
 """A consistent editorial chart system: exact data, high-contrast visual hierarchy."""
 
 from io import BytesIO
+
+import matplotlib
 import numpy as np
 import pandas as pd
-import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 BG = "#080f20"
 PANEL = "#111d33"
@@ -238,7 +239,7 @@ def generate(root, tables):
         a.text(
             0.5,
             0.92,
-            f"{vals[1]-vals[0]:+.2f} pp",
+            f"{vals[1] - vals[0]:+.2f} pp",
             ha="center",
             transform=a.transAxes,
             color=col,
@@ -365,7 +366,7 @@ def generate(root, tables):
             a.text(
                 i,
                 bottom[i] + v + 4,
-                f'{"−" if i in [1,2] else ""}{v}',
+                f"{'−' if i in [1, 2] else ''}{v}",
                 ha="center",
                 fontsize=17,
                 fontweight="bold",
@@ -420,7 +421,7 @@ def generate(root, tables):
             a.text(
                 j,
                 i,
-                f"{summary.iloc[i,j]:+.1f}K",
+                f"{summary.iloc[i, j]:+.1f}K",
                 ha="center",
                 va="center",
                 color="black" if abs(summary.iloc[i, j]) < 0.5 * bound else "white",

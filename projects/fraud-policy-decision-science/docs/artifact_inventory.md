@@ -1,8 +1,8 @@
 # Artifact inventory
 
-## Visual system
+## Figures
 
-Deep navy backgrounds, electric cyan for improvements, coral for loss/friction, purple for policy/state and gold for annotations. Charts use explicit units and direct labels, with evidence populations in subtitles. SVGs preserve text and scale in GitHub. The pipeline exports matching PNGs for sharing.
+Figure subtitles identify the population and evidence source. SVGs preserve selectable text; the pipeline also exports PNGs.
 
 | Figure | Role | Data source |
 |---|---|---|
@@ -39,12 +39,12 @@ All SVGs are in `results/figures/`; PNGs are reproducible exports. The self-cont
 
 | Goal | Entry point |
 |---|---|
-| Five-minute portfolio review | Root project README and selected figures |
-| Follow David's reasoning | `docs/research_narrative.md` |
+| Project overview | Root project README and selected figures |
+| Follow the investigation | `docs/research_narrative.md` |
 | Review experimental identification | `docs/experiment.md` |
 | Review modeling choices | `docs/model_diagnostics.md` |
 | Review queue and sequential identification | `docs/adaptive_evaluation.md` |
 | Inspect units and reproducibility | `docs/data_contracts.md` |
-| Reconcile source claims | `docs/source_notes.md` and `data/case_inputs/` |
+| Reconcile source claims | `docs/evidence_provenance.md` and `data/case_inputs/` |
 | Reproduce a module | Five notebooks in `notebooks/` |
 | Rebuild everything | `run_all.py` |

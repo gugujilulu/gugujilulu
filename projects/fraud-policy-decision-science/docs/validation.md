@@ -1,20 +1,15 @@
-# Validation record
+# Validation
 
-Version 2 was checked locally with Python 3.12.13 and the direct dependency versions in `requirements-lock.txt`.
+The project checks both analytical identities and the ability to reproduce its outputs from an installed package. Python 3.12 is the tested runtime.
 
-| Check | Result |
+| Check | What it establishes |
 |---|---|
-| Ten unit tests | Passed: assignment, known treatment effect, accounting, SQL maturity, queue/cash/terminal conservation, repeatability, delayed controller, capacity ablation, channel conservation and invalid inputs |
-| Five notebook walkthroughs | Every code cell executed successfully using the shared package modules |
-| Full pipeline | Regenerates transaction/cohort analyses, estimators, models, operational and sequential scenarios, figures, results note and explorer |
-| Experiment calibration | 160 re-randomizations; bias, coverage and coverage Monte Carlo error in `docs/results.md` |
-| Sequential calibration | 60 datasets per policy; reported coverage, bias and effective sample size |
-| Static figures | Thirteen SVG/PNG pairs rendered and inspected; margins adjusted for long model and scenario labels |
-| Interactive execution | All 135 parameter/rule combinations exercised in Chromium; zero page errors and valid numeric/SVG outputs |
-| Responsive layout | Desktop and 390px mobile screenshots inspected; mobile charts resize their coordinate system; no horizontal overflow |
-| Artifact integrity | SVG/PNG parsing, local Markdown links, SHA-256 manifest and explorer grid checked by `check_artifacts.py` |
-| Formatting | Python source and tests formatted with Black |
+| `ruff check .` and `ruff format --check .` | Imports, basic Python errors and consistent formatting |
+| `python -m unittest discover -s tests -v` | Assignment, observed/potential-outcome consistency, known effects, accounting, cohort maturity, queue conservation, policy switching and mechanism ablations |
+| `python check_notebooks.py` | Every code cell in the five walkthroughs executes through the installed package, with a fresh namespace per notebook |
+| `python run_all.py` | Cohorts, experiments, models, queue policies, sequential validation, figures, results and explorer regenerate from configuration |
+| `python check_artifacts.py` | Figure parsing, local document links, source/result fingerprints and the 135-scenario grid |
 
-The GitHub workflow repeats dependency installation, unit tests, the full pipeline and artifact integrity checks for project changes. Its run status is reported by GitHub after publication. Browser checks were performed locally with Chromium 133 via Playwright; the analysis workflow remains Python-only.
+The [GitHub workflow](https://github.com/gugujilulu/gugujilulu/actions/workflows/fraud-case.yml) repeats these checks using `requirements-dev-lock.txt`. Notebook checking executes Python cells; it does not test the Jupyter interface. The self-contained explorer selects precomputed values, with no network data requests.
 
-Calibration coverage describes repeated samples from the configured generators. Supplied case aggregates carry their original point estimates, while uncertainty in the new numerical studies is computed from the generated data.
+Estimator calibration is reported as a numerical study: 160 re-randomizations for ratio ITT and 60 datasets per sequential rule. Coverage and its Monte Carlo uncertainty appear in [computed results](results.md). Unit tests check identities and known effects; calibration estimates remain reported outcomes.

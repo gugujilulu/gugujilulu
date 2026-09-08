@@ -36,7 +36,7 @@ The generated measure is fraud incidence standardized to a common pre-routing ge
 | Remaining-information diagnostic | Masked high | 0.721 | 0.259 | 0.098 |
 | Remaining-information diagnostic | Natural low | 0.537 | 0.204 | 0.154 |
 
-`pr_auc` is average precision. The specialized model has the additional PSP feature and trains on the early weak-observability subset. Masked-high and natural-low diagnostics fit separately on the same remaining columns. Point estimates are descriptive; the calibration plot and `calibration.csv` expose probability performance.
+`pr_auc` is average precision. The specialized model has the additional PSP feature and trains on the early weak-observability subset. Masked-high and natural-low diagnostics fit separately on the same remaining columns. Point estimates are descriptive; the calibration plot and `calibration.csv` show agreement between predictions and outcomes.
 
 ![Calibration on the generated temporal holdout](../results/figures/12_calibration.svg)
 
@@ -71,7 +71,7 @@ Default adaptive and delayed rules remain at 80% throughout and match fixed high
 
 ## Operational interaction
 
-The equal-dose factorial interaction averages **$-253.6K**, with a paired-seed 95% interval of **[$-261.6K, $-245.6K]**. Its sign is retained from the simulation. The combined intervention's gain over either component and superadditivity are different comparisons.
+The equal-dose factorial interaction averages **$-253.6K**, with a paired-seed 95% interval of **[$-261.6K, $-245.6K]**. The negative interaction indicates overlapping benefits at these doses. A combined intervention can still outperform either component on its own.
 
 ![Equal-dose operational interventions](../results/figures/11_operations_factorial.svg)
 
@@ -85,10 +85,10 @@ The equal-dose factorial interaction averages **$-253.6K**, with a paired-seed 9
 | fixed_high | -0.017 | 93.3% | 137.3 |
 | fixed_low | -0.019 | 93.3% | 138.1 |
 
-For each rule, 60 independently randomized datasets contain 2,200 four-step trajectories. Compatible histories receive weight 16; the average effective sample is therefore much smaller than the number of episodes. A separate 100,000-trajectory on-policy simulation approximates the true expectation. Coverage's Monte Carlo standard error is roughly three percentage points at the reported values; 60 repetitions give a diagnostic rather than a precise calibration certificate. The adaptive estimate's finite Monte Carlo bias is reported directly.
+For each rule, 60 independently randomized datasets contain 2,200 four-step trajectories. Compatible histories receive weight 16; the average effective sample is therefore much smaller than the number of episodes. A separate 100,000-trajectory on-policy simulation approximates the true expectation. Coverage's Monte Carlo standard error is roughly three percentage points at the reported values; 60 repetitions leave appreciable uncertainty in the coverage estimate.
 
 The operational simulator and this sequential validation use different data-generating processes. Forward queue-policy comparisons validate operational consequences under assumptions; the sequential demonstration checks identification and weighting under randomized history support.
 
 ## Reproducibility record
 
-Python 3.12.13; direct package versions are in `results/summary.json` and `requirements-lock.txt`. All point estimates, scenario comparisons, validation replicates, case inputs and source fingerprints are committed or reproducible from the entry point. Supplied-aggregate experimental uncertainty remains unavailable from the original materials.
+Python 3.12.14; analysis package versions are in `results/summary.json`; `requirements-lock.txt` pins the full dependency environment. All point estimates, scenario comparisons, validation replicates, case inputs and source fingerprints are committed or reproducible from the entry point. Supplied-aggregate experimental uncertainty remains unavailable from the original materials.

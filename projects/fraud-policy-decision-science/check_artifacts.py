@@ -1,10 +1,11 @@
 """Check publishable figures, local links, source fingerprints and explorer grid."""
 
-from pathlib import Path
 import hashlib
 import json
 import re
 import xml.etree.ElementTree as ET
+from pathlib import Path
+
 from PIL import Image
 
 
@@ -16,7 +17,10 @@ def main():
     for p in (root / "results/figures").glob("*.png"):
         with Image.open(p) as im:
             im.verify()
-    for p in root.rglob("*.md"):
+    documents = list(root.glob("*.md"))
+    for folder in ["docs", "notebooks", "data/case_inputs"]:
+        documents.extend((root / folder).rglob("*.md"))
+    for p in documents:
         for target in re.findall(r"\]\(([^)]+)\)", p.read_text()):
             target = target.split("#")[0]
             if target and "://" not in target and not (p.parent / target).exists():

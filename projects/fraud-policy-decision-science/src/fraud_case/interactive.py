@@ -2,7 +2,8 @@
 
 import itertools
 import json
-from pathlib import Path
+from importlib.resources import files
+
 from .operations import simulate
 
 
@@ -27,7 +28,7 @@ def build(root, cfg):
                 "recovery": round(d.recovered.sum(), 2),
                 "missed": int(d.missed.sum()),
             }
-    template = (root / "src/fraud_case/explorer.html").read_text()
+    template = files("fraud_case").joinpath("explorer.html").read_text()
     payload = json.dumps(grid, separators=(",", ":"))
     (root / "reports/policy_explorer.html").write_text(
         template.replace("__GRID__", payload)

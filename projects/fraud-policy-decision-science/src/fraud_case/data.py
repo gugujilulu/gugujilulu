@@ -1,6 +1,7 @@
 """Synthetic worlds with known mechanisms; supplied case evidence stays separate."""
 
 from __future__ import annotations
+
 import numpy as np
 import pandas as pd
 from scipy.special import expit

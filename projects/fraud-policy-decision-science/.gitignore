@@ -5,3 +5,7 @@ __pycache__/
 data/generated/
 results/tables/assignment_logs.csv
 results/tables/sequential_logs.csv
+*.egg-info/
+build/
+dist/
+.ruff_cache/

@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
 """Regenerate the complete project from explicit configuration."""
 
+import argparse
+import hashlib
+import json
+import platform
 from pathlib import Path
-import argparse, hashlib, json, platform, sys
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
-import pandas as pd
 import numpy as np
+import pandas as pd
+
 from fraud_case import (
-    data,
     cohorts,
+    data,
+    decomposition,
     estimators,
+    figures,
+    interactive,
     models,
     operations,
-    decomposition,
-    sequential,
-    figures,
-    saturation,
-    interactive,
     reporting,
+    saturation,
+    sequential,
 )
 
 
@@ -184,6 +187,11 @@ def main():
                 "check_artifacts.py",
                 "requirements-lock.txt",
                 "pyproject.toml",
+                "requirements.txt",
+                "requirements-build.txt",
+                "requirements-dev.txt",
+                "requirements-dev-lock.txt",
+                "check_notebooks.py",
             ]
         }
     )

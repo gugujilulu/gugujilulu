@@ -25,7 +25,7 @@ Large generated datasets and assignment logs are regenerated locally. Committed 
 
 ## Reproducibility
 
-The configuration records all main sample sizes, seeds, queue costs and controller settings. Small design constants (time split, model complexity, recovery probabilities, memory update) are documented in source and versioned in the manifest. The explorer grid and sensitivity scenarios are fixed in source. NumPy random generators and scikit-learn model seeds are explicit. Pinned direct dependencies record the tested environment; indirect dependencies may differ across platforms. SVG text remains selectable and metadata dates are removed; PNG files are rendered by the same plotting code.
+The configuration records all main sample sizes, seeds, queue costs and controller settings. Small design constants (time split, model complexity, recovery probabilities, memory update) are documented in source and versioned in the manifest. The explorer grid and sensitivity scenarios are fixed in source. NumPy random generators and scikit-learn model seeds are explicit. `requirements-lock.txt` pins direct and transitive dependencies for Python 3.12. `requirements-dev-lock.txt` adds the formatting and lint tool. Platform markers cover conditional dependencies. SVG text remains selectable and metadata dates are removed; PNG files are rendered by the same plotting code.
 
 Outcome scaling: generated loss estimators are proportions; multiply by 100 for percentage points. Queue economic values are generated USD amounts, not estimates from the supplied operational table. Backlog is case count; capacity is service-work units per week. The `case_mean_amount` key is a lognormal scale parameter, so its arithmetic mean also depends on the fixed dispersion/offset.
 

@@ -1,6 +1,7 @@
 """SQLite queries and direct standardization of merchant risk."""
 
 import sqlite3
+
 import pandas as pd
 
 
