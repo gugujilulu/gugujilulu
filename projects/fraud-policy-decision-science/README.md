@@ -1,147 +1,123 @@
 # Fraud Policy Decision Science
 
-**From rising CNP losses to targeted authentication and adaptive policy evaluation.**
+**From a rising loss rate to a policy that accounts for information, adaptation and operational capacity.**
 
-An independent Decision Scientist case study examining how to diagnose a fraud-loss increase, design a randomized intervention, and evaluate policy value when attackers and recovery operations respond to the intervention.
+![Three turning points in the fraud investigation](results/figures/00_hero.svg)
 
-The study was developed through an iterative simulated research interview. All numerical results are supplied synthetic scenario evidence. The contribution is the analytical reasoning, experimental design, and decision framework; the current release is a documented case study. Executable reconstruction is a planned extension.
+A Decision Scientist case study by **Yifu Zhao (David)**. The investigation follows a payment-risk problem through two connected pathways: how fraud gets through authorization, and how gross fraud becomes the company's final loss. The research begins with a metric increase and ends with the evaluation of a state-dependent decision rule.
 
-## The decision
+**Explore:** [Research narrative](docs/research_narrative.md) · [Results & uncertainty](docs/results.md) · [Interactive policy lab](reports/policy_explorer.html) · [Reproduce](#run-the-project) · [Evidence map](docs/source_notes.md)
 
-Over six weeks, reported fraud loss rate increased from **0.32% to 0.47%**, while transaction volume was roughly flat and overall approval rate remained stable.
+The case evidence was supplied during a simulated research interview. The executable analyses use separately generated data with explicit mechanisms and seeds. Every figure identifies its evidence population. The interactive HTML runs offline after download; GitHub displays its source.
 
-> “Fraud losses are up almost 50%. Should we tighten our fraud policy?”
+## The decision in one minute
 
-My analysis develops a targeted response: strengthen authentication for low-observability, otherwise-exempted traffic; improve recovery capacity and evidence workflows; and evaluate the resulting policy over a horizon that captures displacement and queue dynamics.
+The reported portfolio fraud loss rate rose from **0.32% to 0.47%**. Mature CNP cohorts also deteriorated, directing the investigation toward transaction behavior and payment routing. Merchant A retained an elevated loss rate after matching; Merchant B's apparent anomaly largely followed its transaction mix.
 
-## 1. Establish what changed
+A randomized forced-3DS intervention in Merchant A's eligible flow reduced supplied net loss per attempted value from **2.72% to 1.63%**, alongside a **2.9 percentage-point completion decline**. The largest benefit occurred where authorization-time information was weakest. Subsequent channel evidence changed the decision: by week three, treated-channel indexed loss was down **53%**, while combined loss was down **7%**.
 
-I began with the metric definition and its clock: transaction date, fraud reporting date, and loss recognition date. Comparing transaction cohorts at a common follow-up horizon separates underlying deterioration from delayed recognition.
+The second pathway explains why prevention's value extends into operations. Liability allocation and recovery performance lifted net loss from **40 to 59** indexed units. Evidence delays and limited processing capacity created congestion, allowing prevention to improve recovery outcomes on other cases sharing the queue.
 
-The supplied case evidence then localized the change:
+**Decision:** assess targeted authentication together with recovery capacity, evidence automation and policy history. Evaluate portfolio economic value over a stated horizon, including conversion cost and unresolved liability. The executable reconstruction shows when adaptive rules change actions—and when they behave exactly like a fixed rule.
 
-| Finding | Earlier | Later | Interpretation |
-|---|---:|---:|---|
-| Reported portfolio loss rate | 0.32% | 0.47% | +0.15 percentage points; approximately +47% relative |
-| CNP share of fraud losses | 41% | 68% | Loss concentration shifted toward card-not-present payments |
-| Mature-cohort CNP fraud loss rate | 0.44% | 0.78% | Deterioration persisted after aligning maturity |
-| CNP fraudulent transaction count | Baseline | +49% | Frequency contributed materially |
-| Average CNP fraud loss | Baseline | +12% | Severity also increased |
+![Two connected research pathways](results/figures/01_system_map.svg)
 
-Digital goods, electronics, and travel accounted for **57% of incremental losses**, and two merchants accounted for **21%**. These overlapping views guided the investigation; they represent different partitions of the same loss pool.
+## What the investigation establishes
 
-The core decomposition is:
+| Research turn | Evidence and analytical move | Consequence for the decision |
+|---|---|---|
+| Is the increase real? | Separate transaction, report and recognition clocks; compare mature CNP cohorts | Use a common exposure population and follow-up window |
+| Why Merchant A? | Compare raw and matched risk; retain Merchant B as a composition counterexample | Investigate route × authentication × observability |
+| Does forced 3DS help? | Randomized assignment; ITT across all eligible attempts | Price loss reduction against completion and authentication costs |
+| Would a better model solve it? | Same-information challengers, masking, new PSP signals, temporal holdout | Distinguish representation quality, missing information and population change |
+| Where does the fraud go? | Trace treated and other channels; randomize saturation schedules | Measure portfolio loss with carryover and exposure history |
+| Why does net loss rise faster? | Gross → liability → realized recovery; explicit interaction and Shapley decompositions | Connect case composition to operating performance |
+| Which rule should run? | Case-level queue simulation, equal-dose factorial, paired policy scenarios, sequential IPW validation | Compare complete dynamic policies with costs and uncertainty |
 
-**Fraud loss rate = fraudulent transaction count × average fraud loss / transaction value.**
+## Selected findings
 
-Portfolio rate changes also depend on segment weights. Frequency, severity, and mix are reconciled within a common cohort and accounting definition.
+### Merchant A and Merchant B lead to different actions
 
-## 2. Diagnose Merchant A's decision pathway
+The supplied case gives Merchant A a raw relative loss rate of approximately **2.8×**, narrowing to **1.6×** in a matched population. Merchant B's excess largely disappears after adjustment. The executable reconstruction below uses direct standardization of pre-routing geography/CNP mix and measures **fraud incidence**, producing its own numerical results.
 
-Merchant A's server-to-server checkout flow represented **22% of its transactions and 61% of its incremental losses**. The investigation connected integration architecture, device observability, PSP routing, and authentication exemptions.
+![Merchant comparison in the generated reconstruction](results/figures/02_merchants.svg)
 
-| Merchant A S2S flow | Before routing change | After routing change |
-|---|---:|---:|
-| 3DS exemption routing rate | 19% | 44% |
-| Missing device fingerprint | 33% | 35% |
-| Mature-cohort loss rate | 1.9% | 4.6% |
+### An experiment changes both loss and who completes
 
-The strongest operational hypothesis was a composition shift into the already-risky **missing-device × exempted** state. Comparable merchants on the same PSP moved in the same direction; other-PSP comparisons and Merchant A's alternative route provided additional checks.
+![Supplied 3DS loss and completion trade-off](results/figures/03_3ds_tradeoff.svg)
 
-This supports a targeted intervention hypothesis. Precise causal attribution to the routing change remains limited by changing exemption selection and unavailable PSP risk information. Authentication is also a potential mediator, so adjustment choices depend on the causal question.
+The primary estimand is the assignment effect on net loss per attempted value. Conditioning on successful authentication or payment completion selects a population affected by treatment. The [experiment note](docs/experiment.md) derives the estimator, explains heterogeneity and keeps the original small teaching example separate from the larger case experiment.
 
-## 3. Evaluate assignment to forced 3DS
+![Completed-only selection example and the separate experiment](results/figures/04_selection.svg)
 
-The case proposed a four-week experiment covering approximately **80,000 eligible transactions**, with up to **20% assigned to forced 3DS** among transactions that would otherwise receive an exemption.
+### Information and model quality need separate experiments
 
-Randomization was stratified by pre-treatment PSP risk tier, exemption type, routing reason, channel, and device availability. Fraud outcomes were evaluated after cohort maturity; payment completion was monitored immediately.
+The generated temporal holdout compares a production proxy, a challenger with identical information, additional PSP information and a specialized low-observability model. ROC-AUC, average precision, Brier score and log loss are reported together. Masking a rich population supplies a different diagnostic from testing naturally weakly observed traffic.
 
-The primary estimand is the **intention-to-treat effect of assignment to the policy**. Noncompliance remains part of the policy's operational effect.
+![Model and information diagnostics](results/figures/05_information.svg)
 
-| Supplied scenario outcome | Control | Assigned forced 3DS | Absolute difference |
-|---|---:|---:|---:|
-| Payment completion | 91.8% | 88.9% | −2.90 pp |
-| Gross fraud loss / attempted value | 3.05% | 2.18% | −0.87 pp |
-| Net company loss / attempted value | 2.72% | 1.63% | −1.09 pp |
+[Model design and interpretation](docs/model_diagnostics.md)
 
-The net-loss-rate reduction is approximately **40.1% relative**, accompanied by a payment-completion trade-off. Deployment value incorporates legitimate contribution margin, authentication fees, and operating costs.
+### A local win can fade at portfolio level
 
-Completed-only comparisons condition on an outcome affected by treatment. I retained the assigned population for the primary analysis and separated transaction-count rates from value-based loss rates.
+![Delayed displacement across channels](results/figures/06_displacement.svg)
 
-Pre-specified device segments also showed different policy effects:
+The supplied time series motivates interference-aware experimentation. A separate runnable six-channel simulation records randomized saturation, incoming/outgoing displacement and prior exposure. Its blocked assignment has marginal probability 1/3 at each saturation; joint assignments are constrained within each block.
 
-| Device availability | Gross loss ITT | Net loss ITT | Completion ITT |
-|---|---:|---:|---:|
-| Present | −0.28 pp | −0.41 pp | −2.3 pp |
-| Missing | −2.05 pp | −2.54 pp | −3.4 pp |
+### Operations change the economics of prevention
 
-These supplied contrasts support prioritizing low-observability traffic for further policy evaluation. The apparent $150–$600 opportunity was treated as exploratory; subsequent case analysis supported a smooth amount relationship rather than a special interval.
+![Gross-to-net accounting waterfalls](results/figures/07_waterfall.svg)
 
-## 4. Move the outcome to the portfolio
+The queue engine models arrival-level liability, evidence readiness, processing effort, filing deadlines, recovery and terminal outstanding cases. Every case and cash flow reconciles. A matched **2×2 factorial** evaluates +450 weekly service units and 70% automation at the same doses in the combined cell. An unlimited-capacity ablation isolates the contribution of congestion.
 
-![Local gains and portfolio displacement](assets/figures/displacement.svg)
+![Queue, authentication and economic-value trajectories](results/figures/08_policy_paths.svg)
 
-The case introduced a historical channel intervention with strong local improvement and growing losses elsewhere:
+![Sensitivity of fixed and adaptive policies](results/figures/09_policy_sensitivity.svg)
 
-| Period | Treated channel index | Other channels index | Combined loss units |
-|---|---:|---:|---:|
-| Baseline | 100 | 100 | 200 |
-| Week 1 | 45 | 103 | 148 |
-| Week 2 | 43 | 126 | 169 |
-| Week 3 | 47 | 139 | 186 |
-| Two weeks after withdrawal | 78 | 118 | 196 |
+The default adaptive and delayed rules remain at high intensity and tie fixed 80% over the horizon. Lower arrivals and changes in evidence readiness create different paths. [Numerical results](docs/results.md) include paired confidence intervals and Monte Carlo calibration; [policy evaluation](docs/adaptive_evaluation.md) separates simulation value, action effects and full-policy identification.
 
-By week three, the treated channel was 53% below baseline while combined losses were only 7% lower. This motivated an evaluation design that measures cross-channel displacement, treatment saturation, and multiweek carryover. The table is descriptive scenario evidence.
+## Run the project
 
-The analytical unit expands to linked account or credential clusters and system-level exposure periods. The target becomes durable portfolio value under a coverage policy.
+Python **3.12** is the tested environment. From the repository root:
 
-## 5. Connect prevention with recovery operations
+```bash
+cd projects/fraud-policy-decision-science
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-lock.txt
+python -m unittest discover -s tests -v
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python run_all.py
+```
 
-In the downstream case extension, gross confirmed fraud grew **28%** while net company loss grew **47%**. Liability allocation and recovery performance connect the two:
+On Windows, activate with `.venv\Scripts\activate`; run `python run_all.py` after activation. For a standalone copy, start inside this project directory. `requirements.txt` records supported dependency ranges; the lock file records the locally tested direct versions.
 
-**Net loss = gross fraud × company liability share × (1 − recovery rate).**
+One entry point regenerates SQL outputs, experiment estimates, model diagnostics, operational scenarios, sequential-estimator validation, SVG/PNG charts, and the offline explorer. Configuration lives in [configs/base.json](configs/base.json). Notebook views are thin, executable entry points into the same modules.
 
-The recovery rate is defined on company-liable dollars. Segment-level accounting preserves differences in liability and recoverability.
+```bash
+python run_all.py --config configs/base.json
+python -m http.server 8000
+```
 
-Weekly case arrivals increased from **1,000 to 1,690**, while processing increased from **1,020 to 1,280**. Backlog rose from **420 to 1,870**, and pre-processing queue time increased from **0.6 to 2.4 days**. This directed the response toward capacity and slow evidence workflows.
+Then open `http://localhost:8000/reports/policy_explorer.html`, or open the downloaded HTML directly. All 135 explorer settings are precomputed by the same queue engine. The explorer uses one seed; policy comparisons use 12 paired seeds.
 
-Preventing additional cases can improve recovery on other cases by relieving congestion. Portfolio net loss already incorporates that recovery benefit; mechanism-level savings are reconciled to the total.
+## Repository map
 
-## 6. Evaluate the adaptive rule itself
+| Location | Contents |
+|---|---|
+| `src/fraud_case/` | Data generators, estimators, SQL adapter, model diagnostics, queue engine, saturation experiment, sequential validation, charts and explorer builder |
+| `sql/` | Recognition-clock dashboard and mature transaction-cohort queries |
+| `configs/` | Seeds, sample sizes, costs, service capacity and controller thresholds |
+| `data/case_inputs/` | Supplied aggregate scenario evidence, source labels and units |
+| `data/generated/` | Regenerated transaction/case data, excluded from version control |
+| `notebooks/` | Five module walkthroughs using the production analysis functions |
+| `results/tables/` | Reproducible estimates, calibration checks, policy comparisons and trajectories |
+| `results/figures/` | High-contrast SVG figures; PNG exports produced by the pipeline |
+| `reports/` | Self-contained interactive policy explorer |
+| `docs/` | Research narrative, estimands, evidence reconciliation, data contracts and results |
+| `tests/` | Accounting, assignment, maturity, hysteresis, reproducibility and mechanism tests |
 
-The candidate rule increases authentication coverage above **1,200 pending cases**, and considers relaxation below **800**, with a delayed-release variant that retains stronger authentication for an additional week.
+See the [complete artifact inventory](docs/artifact_inventory.md) and [implementation checklist](docs/upgrade_checklist.md).
 
-Backlog reflects fraud arrivals, staffing, seasonality, and previous policy actions. The proposed evaluation randomizes the action at eligible decision points within recorded operational states. The state includes backlog, recent arrivals, capacity, risk composition, and policy history.
+## Scope of the reconstruction
 
-The objective is:
-
-**V(policy) = expected cumulative legitimate contribution margin − net fraud loss − authentication cost − operating cost.**
-
-The target comparison is **V(adaptive policy) − V(fixed policy)** over a common multiweek horizon. Trigger-level randomized effects are inputs to this evaluation; complete policy value also requires accounting for subsequent state transitions and actions.
-
-The design specifies action probabilities, eligible states, carryover, delayed outcomes, and an independent evaluation period. Sequential weighting or g-computation can support policy-value estimation where action coverage and assumptions permit. The 1,200/800 thresholds are candidate settings for evaluation.
-
-## What this project demonstrates
-
-- Metric construction and cohort maturity before intervention selection.
-- Frequency, severity, mix, liability, and recovery decomposition.
-- Causal reasoning about routing, selection, observability, and authentication.
-- Randomized policy evaluation with ITT, economic trade-offs, and pre-treatment heterogeneity.
-- A progression from transaction effects to portfolio effects and dynamic policy value.
-- Translating analytical findings into targeted operational decisions.
-
-## Evidence and implementation status
-
-The source is the August 31, 2026 fraud-case research walkthrough, organized into 22 analytical stages. Numerical tables above are curated synthetic case inputs; percentage-point differences and relative changes are arithmetic derived from those inputs.
-
-Transaction-level data, assignment logs, uncertainty estimates, and a fitted dynamic model are future reconstruction requirements. Reported case contrasts therefore carry the status of supplied scenario evidence. The executable extension will document generated data and model assumptions separately.
-
-## My contribution
-
-I developed the analytical questioning and decision logic through the case: clarifying the loss metric, tracing merchant and routing mechanisms, specifying randomized interventions, interrogating selection and heterogeneity, and extending evaluation to displacement, recovery congestion, and adaptive rules. This repository organizes that research process into a portfolio case study.
-
-## Supporting material
-
-- [Adaptive evaluation protocol and candidate state diagram](docs/adaptive_evaluation.md)
-- [Source map and numerical reconciliation](docs/source_notes.md)
-- [Supplied aggregate inputs](data/case_inputs/)
+The supplied aggregates motivate the research. Generated datasets demonstrate the analytical methods and carry their own values. The queue model encodes a plausible mechanism rather than a fitted operational forecast; costs, delays and response functions are configurable. The sequential estimator is validated in a separate short-horizon randomized state model, with its own estimand and known data-generating process. Moving from this portfolio project to a live policy requires transaction-level outcome maturation, actual cost estimates, and an experimental design with support for the candidate policy histories.

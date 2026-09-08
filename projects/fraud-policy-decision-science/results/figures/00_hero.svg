@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="936pt" height="360pt" viewBox="0 0 936 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 936 360 
+L 936 0 
+L 0 0 
+z
+" style="fill: #080f20"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 74.88 305.802 
+L 321.984 305.802 
+Q 334.3392 305.802 334.3392 302.4 
+L 334.3392 86.94 
+Q 334.3392 83.538 321.984 83.538 
+L 74.88 83.538 
+Q 62.5248 83.538 62.5248 86.94 
+L 62.5248 302.4 
+Q 62.5248 305.802 74.88 305.802 
+z
+" style="fill: #111d33; stroke: #ff796b; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 354.9312 305.802 
+L 602.0352 305.802 
+Q 614.3904 305.802 614.3904 302.4 
+L 614.3904 86.94 
+Q 614.3904 83.538 602.0352 83.538 
+L 354.9312 83.538 
+Q 342.576 83.538 342.576 86.94 
+L 342.576 302.4 
+Q 342.576 305.802 354.9312 305.802 
+z
+" style="fill: #111d33; stroke: #34e4d4; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 634.9824 305.802 
+L 882.0864 305.802 
+Q 894.4416 305.802 894.4416 302.4 
+L 894.4416 86.94 
+Q 894.4416 83.538 882.0864 83.538 
+L 634.9824 83.538 
+Q 622.6272 83.538 622.6272 86.94 
+L 622.6272 302.4 
+Q 622.6272 305.802 634.9824 305.802 
+z
+" style="fill: #111d33; stroke: #af91ff; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ff796b" x="91.3536" y="177.66" transform="rotate(-0 91.3536 177.66)">+47%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf4ff" x="91.3536" y="245.7" transform="rotate(-0 91.3536 245.7)">Reported portfolio loss rate</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #34e4d4" x="371.4048" y="177.66" transform="rotate(-0 371.4048 177.66)">−40.1%</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf4ff" x="371.4048" y="245.7" transform="rotate(-0 371.4048 245.7)">3DS experiment · net loss rate</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #af91ff" x="651.456" y="177.66" transform="rotate(-0 651.456 177.66)">−53% / −7%</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf4ff" x="651.456" y="245.7" transform="rotate(-0 651.456 245.7)">Week 3 · channel / portfolio</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf4ff" x="56.16" y="28.276406" transform="rotate(-0 56.16 28.276406)">WHEN FRAUD BECOMES A SYSTEM PROBLEM</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9caec8" x="56.16" y="39.6" transform="rotate(-0 56.16 39.6)">Decision Science / two connected mechanisms / supplied synthetic case evidence</text>
+  </g>
+  <g id="text_9">
+   <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf4ff" x="74.88" y="338.4" transform="rotate(-0 74.88 338.4)">Diagnose the mechanism. Change the estimand. Evaluate the decision.</text>
+  </g>
+ </g>
+</svg>

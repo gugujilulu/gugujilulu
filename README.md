@@ -30,7 +30,7 @@ Public-safe evidence package and runnable reconstruction of breast cancer risk-m
 
 **Causal diagnosis · randomized policy evaluation · risk economics · adaptive decisions**
 
-Independent simulated case study tracing rising CNP losses through merchant routing, randomized 3DS, cross-channel displacement, and recovery congestion. Develops an evaluation framework from transaction-level ITT to multiweek portfolio value and adaptive policy comparison.
+Reproducible Decision Scientist case study tracing rising CNP losses through merchant routing, randomized 3DS, model-information diagnostics, cross-channel displacement, and recovery congestion. Includes five runnable analysis modules, 13 visual arguments, an offline policy explorer with 135 scenarios, Monte Carlo estimator validation, and fixed-versus-adaptive policy comparisons.
 
 **[Explore the case study →](projects/fraud-policy-decision-science/)**
 
