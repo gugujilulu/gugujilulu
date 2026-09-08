@@ -30,9 +30,9 @@ Public-safe evidence package and runnable reconstruction of breast cancer risk-m
 
 **Causal diagnosis · randomized policy evaluation · risk economics · adaptive decisions**
 
-Reproducible Decision Scientist case study tracing rising CNP losses through merchant routing, randomized 3DS, model-information diagnostics, cross-channel displacement, and recovery congestion. Includes five runnable analysis modules, 13 visual arguments, an offline policy explorer with 135 scenarios, Monte Carlo estimator validation, and fixed-versus-adaptive policy comparisons.
+An independent simulated case study investigating a fraud loss-rate increase from 0.32% to 0.47%. I follow the evidence from payment routing and a randomized authentication intervention to cross-channel displacement and recovery congestion. The runnable analysis compares policy value, including cases where adaptive rules tie or underperform fixed policies.
 
-**[Explore the case study →](projects/fraud-policy-decision-science/)**
+**[Explore the case study](projects/fraud-policy-decision-science/) · [Open Policy Lab](https://fraud-policy-lab.cosmic-olm-7863.chatgpt.site)**
 
 ### Risk Operations & Analytics Systems — Ping An Finserve
 

@@ -1,14 +1,13 @@
 """Invariant and identification tests; Monte Carlo calibration is a separate report."""
 
-from pathlib import Path
 import json
-import sys
 import unittest
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from fraud_case import data, estimators, cohorts, decomposition, operations, saturation
+from fraud_case import cohorts, data, decomposition, estimators, operations, saturation
 
 ROOT = Path(__file__).resolve().parents[1]
 

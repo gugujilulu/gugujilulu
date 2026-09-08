@@ -22,7 +22,7 @@ A stronger missing-device effect can reflect prevented fraud, liability allocati
 
 ## The completion example
 
-The transcript's teaching example has 1,000 attempts per arm, 918 versus 889 completions, and 20 versus 21 completed fraudulent transactions. Completed-only fraud incidence is 2.18% versus 2.36%. That small example illustrates a changed selected population; its counts do not supply the actual larger experiment's loss totals.
+The separate teaching example has 1,000 attempts per arm, 918 versus 889 completions, and 20 versus 21 completed fraudulent transactions. Completed-only fraud incidence is 2.18% versus 2.36%. That small example illustrates a changed selected population; its counts do not supply the actual larger experiment's loss totals.
 
 The larger supplied case separately reports completed-transaction fraud frequency of 235 versus 249 per 10,000, average gross fraudulent loss of $412 versus $276 and average net fraudulent loss of $367 versus $207. Different amount distributions and denominators connect incidence, severity and loss rates. Aggregate point estimates alone do not supply randomization confidence intervals.
 

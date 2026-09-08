@@ -2,6 +2,7 @@
 
 import numpy as np
 import pandas as pd
+
 from .data import assign
 
 
@@ -70,7 +71,7 @@ def analyze(d):
                     metric=metric,
                     **ratio_itt(
                         frame, metric, None if metric == "completion" else "amount"
-                    )
+                    ),
                 )
             )
     return pd.DataFrame(rows)
@@ -86,7 +87,7 @@ def validate(d, repetitions, seed):
                 repetition=i,
                 truth=truth,
                 **result,
-                covered=result["lower"] <= truth <= result["upper"]
+                covered=result["lower"] <= truth <= result["upper"],
             )
         )
     return pd.DataFrame(rows)

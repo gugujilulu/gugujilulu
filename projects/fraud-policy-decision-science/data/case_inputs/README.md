@@ -1,6 +1,6 @@
 # Supplied case inputs
 
-All CSVs here contain aggregate evidence from the author's simulated research interview. They are separate from generated transaction-level data and computed results. [Provenance and reconciliation](../../docs/source_notes.md) links each evidence group to the reviewed transcript locations.
+All CSVs here contain aggregate evidence from the author's simulated research interview. They are separate from generated transaction-level data and computed results. [Provenance and reconciliation](../../docs/evidence_provenance.md) links each evidence group to the reviewed transcript locations.
 
 | File | Units and population |
 |---|---|

@@ -1,10 +1,12 @@
-# Evidence map and reconciliation
+# Evidence provenance and reconciliation
 
-The author supplied `Decision_Scientist_Fraud_Case_Full_Transcript(1).md` and `fraud_case_study_guide(1).html`. The transcript records a simulated research interview and David's analytical responses. The guide summarizes the investigation. [Source hashes](../data/case_inputs/source_manifest.json) identify the reviewed versions; the source files remain with the author. This repository publishes curated case evidence and executable reconstructions.
+The numerical case was supplied through a simulated research interview. My contribution is the diagnostic reasoning, proposed experiments and policy-evaluation design developed through that exercise. The executable reconstruction implements these questions using generated data with explicit assumptions.
+
+The retained source materials are `Decision_Scientist_Fraud_Case_Full_Transcript(1).md` and `fraud_case_study_guide(1).html`. Their [SHA-256 hashes](../data/case_inputs/source_manifest.json) identify the reviewed copies. The repository publishes the aggregate evidence and reconstruction; the full source copies are retained by the author.
 
 ## Provenance map
 
-Line locations below refer to the supplied Markdown transcript. They let the author trace the case back to the reviewed copy; they are not links to publicly available source data.
+Line references locate evidence in the retained Markdown source. The repository column points to its public representation.
 
 | Evidence | Transcript location | Repository representation |
 |---|---|---|
@@ -28,7 +30,7 @@ Line locations below refer to the supplied Markdown transcript. They let the aut
 
 ## Reconciliation decisions
 
-1. **Transcript rollback.** The early all-at-once findings at approximately 1153–1175 were explicitly revoked around 1288–1308. The evidence map uses subsequent reintroduction from 1330 onward. The research narrative preserves David's inquiry sequence rather than treating prematurely supplied results as discoveries already made.
+1. **Superseded evidence.** Findings at source lines 1153–1175 were withdrawn at 1288–1308. The evidence record uses the subsequent restatement from line 1330 onward.
 2. **Growth identity.** The count/severity product implies +66.88% loss amount in a common population. The mature CNP rate change implies +77.27%. Complete value denominators and cohort definitions are needed to reconcile them. The +3% volume statistic concerns transaction count and supplies no complete value bridge.
 3. **Concentration.** Category and merchant contributions overlap; adding 57% and 21% would double count their intersection.
 4. **Merchant measures.** Supplied 2.8×/1.6× values describe loss rates under a richer matched comparison. Generated comparisons measure fraud incidence standardized only on geography and CNP mix. Merchant B has no exact supplied adjusted multiplier; the reconstruction's value belongs to its generated population.
@@ -40,7 +42,7 @@ Line locations below refer to the supplied Markdown transcript. They let the aut
 10. **Operational interaction.** The supplied combined scenario uses a smaller capacity dose and beats each individual scenario. The narrative says it exceeds the sum of the two *direct* effects; those direct effects are not separately tabulated. The listed total net values $740K + $630K exceed $1.09M. Equal-dose complementarity therefore requires the separately implemented factorial, whose sign is reported as estimated.
 11. **Queue endpoints.** Arrivals, processing capacity and backlog endpoints involve workload, evidence waiting, expiry and time-varying conditions. A constant arrival-minus-service extrapolation alone does not reconstruct all supplied endpoints. The simulator supplies an explicit stock identity and produces its own endpoints.
 12. **Automation throughput.** Approximately 190–220 weekly cases is the later supplied scenario estimate; 100–150 appears as an earlier hypothetical. Simulator capacity is expressed in work units and automation changes case effort, readiness and completeness.
-13. **Adaptive pilot economics.** $310K lower net fraud loss − $95K foregone margin − $40K authentication cost = $175K before other operating costs. A further $70K recovery spillover can be added only if the $310K excludes it. The project retains this as an unresolved decomposition and does not publish an inflated total.
+13. **Adaptive pilot economics.** $310K lower net fraud loss − $95K foregone margin − $40K authentication cost = $175K before other operating costs. A further $70K recovery spillover can be added only if the $310K excludes it. The $70K remains unresolved pending that inclusion definition.
 14. **Uncertainty.** Supplied aggregate point estimates do not include sufficient transaction-level data to reconstruct experimental confidence intervals. Generated estimates, paired intervals and validation coverage are labeled accordingly.
 
 ## Evidence layers
