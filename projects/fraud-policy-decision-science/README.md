@@ -4,7 +4,7 @@
 
 The reported loss rate rose from **0.32% to 0.47%** in six weeks. Following the losses led to two connected problems: weak authentication on a payment route and a recovery operation struggling with its caseload. The decision became how to target authentication while accounting for lost sales, fraud moving between channels, and recovery capacity.
 
-**[Open Policy Lab](https://fraud-policy-lab.cosmic-olm-7863.chatgpt.site) · [Read the investigation](docs/research_narrative.md) · [Computed results](docs/results.md)**
+**[Open Policy Lab](https://fraud-policy-lab.gugu4-5.chatgpt.site) · [Read the investigation](docs/research_narrative.md) · [Computed results](docs/results.md)**
 
 ![Case evidence: portfolio loss rate +47%; experimental net loss rate −40.1%; week-three treated-channel loss −53% versus portfolio −7%](results/figures/00_hero.svg)
 
@@ -30,7 +30,7 @@ The reconstruction tests the implications of the case with explicit data-generat
 
 ![Fixed and adaptive policies across four operating scenarios](results/figures/09_policy_sensitivity.svg)
 
-The [Policy Lab](https://fraud-policy-lab.cosmic-olm-7863.chatgpt.site) compares five rules across capacity, evidence delay and displacement assumptions. Its 135 precomputed scenarios use one paired seed; [multi-seed comparisons and intervals](docs/results.md) provide the separate uncertainty analysis.
+The [Policy Lab](https://fraud-policy-lab.gugu4-5.chatgpt.site) compares five rules across capacity, evidence delay and displacement assumptions. Its 135 precomputed scenarios use one paired seed; [multi-seed comparisons and intervals](docs/results.md) provide the separate uncertainty analysis.
 
 ## Follow the analysis
 
