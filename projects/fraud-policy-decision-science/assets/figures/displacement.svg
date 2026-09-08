@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+<rect width="960" height="420" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#172b4d">
+<text x="40" y="42" font-size="25">Local gains and portfolio displacement</text>
+<text x="40" y="68" font-size="14">Supplied synthetic case evidence · common loss-unit scale</text>
+<path d="M90 340H860" stroke="#dce3eb"/>
+<text x="50" y="345" font-size="12">0</text>
+<path d="M90 290H860" stroke="#dce3eb"/>
+<text x="50" y="295" font-size="12">50</text>
+<path d="M90 240H860" stroke="#dce3eb"/>
+<text x="50" y="245" font-size="12">100</text>
+<path d="M90 190H860" stroke="#dce3eb"/>
+<text x="50" y="195" font-size="12">150</text>
+<path d="M90 140H860" stroke="#dce3eb"/>
+<text x="50" y="145" font-size="12">200</text>
+<polyline points="110,240.0 290,295.0 470,297.0 650,293.0 830,262.0" fill="none" stroke="#2563eb" stroke-width="3"/>
+<text x="100" y="105" fill="#2563eb" font-size="15">Treated</text>
+<polyline points="110,240.0 290,237.0 470,214.0 650,201.0 830,222.0" fill="none" stroke="#d97706" stroke-width="3"/>
+<text x="340" y="105" fill="#d97706" font-size="15">Other</text>
+<polyline points="110,140.0 290,192.0 470,171.0 650,154.0 830,144.0" fill="none" stroke="#172b4d" stroke-width="3"/>
+<text x="580" y="105" fill="#172b4d" font-size="15">Combined</text>
+<text x="110" y="375" text-anchor="middle" font-size="12">Baseline</text>
+<text x="290" y="375" text-anchor="middle" font-size="12">Week 1</text>
+<text x="470" y="375" text-anchor="middle" font-size="12">Week 2</text>
+<text x="650" y="375" text-anchor="middle" font-size="12">Week 3</text>
+<text x="830" y="375" text-anchor="middle" font-size="12">After withdrawal</text>
+</g></svg>

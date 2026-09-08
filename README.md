@@ -26,6 +26,14 @@ Public-safe evidence package and runnable reconstruction of breast cancer risk-m
 
 **[Explore the repository →](https://github.com/gugujilulu/healthcare-risk-model-validation)**
 
+### Fraud Policy Decision Science
+
+**Causal diagnosis · randomized policy evaluation · risk economics · adaptive decisions**
+
+Independent simulated case study tracing rising CNP losses through merchant routing, randomized 3DS, cross-channel displacement, and recovery congestion. Develops an evaluation framework from transaction-level ITT to multiweek portfolio value and adaptive policy comparison.
+
+**[Explore the case study →](projects/fraud-policy-decision-science/)**
+
 ### Risk Operations & Analytics Systems — Ping An Finserve
 
 **Product management · nationwide debt-collection operations · structured workflows · analytics systems**
