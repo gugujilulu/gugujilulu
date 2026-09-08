@@ -1,0 +1,5 @@
+scenario,additional_recovery_usd,cost_usd,net_value_usd,ending_backlog,deadline_miss_pct,capacity_dose
+Current state,0,0,0,6700,16,baseline
+Capacity,1050000,310000,740000,760,4.6,+450 cases/week
+Automation,820000,190000,630000,3900,9.2,70 percent slow evidence
+Combined,1480000,390000,1090000,620,3.8,70 percent automation plus smaller staffing dose
