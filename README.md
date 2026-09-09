@@ -88,8 +88,7 @@ Read the excerpt · PDF
 <h3>Sporestar II</h3>
 
 <p>
-A science-fiction novel in Chinese, with an English excerpt shared here.
-On a conquered ocean world, an investigator enters a dying nuclear submarine with its last surviving guide, following an anomalous sound that reaches across interstellar space.
+Another ongoing science-fiction novel in Chinese, with an English excerpt shared here. On a conquered ocean world, an investigator enters a dying nuclear submarine with its last surviving guide, following an anomalous sound that reaches across interstellar space.
 </p>
 
 <p>
