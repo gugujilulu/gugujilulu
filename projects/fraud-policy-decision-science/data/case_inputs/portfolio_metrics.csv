@@ -1,7 +1,0 @@
-metric,earlier,recent,unit
-Reported portfolio loss rate,0.32,0.47,percent contemporaneous transaction value
-CNP share of recognized fraud loss,41,68,percent recognized loss amount
-Mature CNP cohort loss rate,0.44,0.78,percent settled value
-CNP transaction count index,100,103,index
-Confirmed CNP fraud count index,100,149,index
-Mean confirmed CNP fraud severity index,100,112,index

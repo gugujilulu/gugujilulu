@@ -1,9 +1,0 @@
-metric,earlier,recent,unit
-Weekly arrivals,1000,1690,cases/week
-Weekly capacity,1020,1280,cases/week
-Open backlog,420,1870,cases
-Case-processing time,1.8,4.9,days
-Queue wait,0.6,2.4,days
-Active handling,31,36,minutes
-Evidence wait,0.5,1.3,days
-Deadline miss rate,3,10,percent
