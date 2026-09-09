@@ -54,7 +54,7 @@ These projects provide the industry and operational context behind my current wo
 
 <tr>
 <td width="170" valign="top">
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf?preview=1">
+<a href="https://www.github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">
 <img src="writing/highland-ring-lake-cover.jpg" alt="The Highland Ring Lake — cover" width="150" />
 </a>
 </td>
@@ -69,7 +69,7 @@ Two young runaways follow an ancient aqueduct into the mist, through a world of 
 
 <p>
 <strong>
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf?preview=1">
+<a href="https://www.github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">
 Read the excerpt · PDF
 </a>
 </strong>
@@ -79,7 +79,7 @@ Read the excerpt · PDF
 
 <tr>
 <td width="170" valign="top">
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Sporestar_II.pdf?preview=1">
+<a href="https://www.github.com/gugujilulu/gugujilulu/blob/main/writing/Sporestar_II.pdf">
 <img src="writing/Sporestar_II.png" alt="Sporestar II — cover" width="150" />
 </a>
 </td>
@@ -93,7 +93,7 @@ Another ongoing science-fiction novel in Chinese, with an English excerpt shared
 
 <p>
 <strong>
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Sporestar_II.pdf?preview=1">
+<a href="https://www.github.com/gugujilulu/gugujilulu/blob/main/writing/Sporestar_II.pdf">
 Read the excerpt · PDF
 </a>
 </strong>
