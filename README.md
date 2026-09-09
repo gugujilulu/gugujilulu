@@ -54,7 +54,7 @@ These projects provide the industry and operational context behind my current wo
 
 <tr>
 <td width="170" valign="top">
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">
+<a href="https://github.com/gugujilulu/gugujilulu/raw/refs/heads/main/writing/Highland_Ring_Lake_excerpt.pdf">
 <img src="writing/highland-ring-lake-cover.jpg" alt="The Highland Ring Lake — cover" width="150" />
 </a>
 </td>
@@ -69,7 +69,7 @@ Two young runaways follow an ancient aqueduct into the mist, through a world of 
 
 <p>
 <strong>
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">
+<a href="https://github.com/gugujilulu/gugujilulu/raw/refs/heads/main/writing/Highland_Ring_Lake_excerpt.pdf">
 Read the excerpt · PDF
 </a>
 </strong>
