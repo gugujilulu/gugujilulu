@@ -51,16 +51,57 @@ These projects provide the industry and operational context behind my current wo
 ## Writing
 
 <table>
+
 <tr>
 <td width="170" valign="top">
-<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf"><img src="writing/highland-ring-lake-cover.jpg" alt="The Highland Ring Lake — cover" width="150" /></a>
+<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">
+<img src="writing/highland-ring-lake-cover.jpg" alt="The Highland Ring Lake — cover" width="150" />
+</a>
 </td>
+
 <td valign="center">
 <h3>The Highland Ring Lake</h3>
-<p>I’m writing a fantasy novel in Chinese, with an English excerpt shared here. Two young runaways follow an ancient aqueduct into the mist, through a world of moss sheep, ruined towers and dark humor.</p>
-<p><strong><a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">Read the excerpt · PDF</a></strong></p>
+
+<p>
+I’m writing a fantasy novel in Chinese, with an English excerpt shared here.
+Two young runaways follow an ancient aqueduct into the mist, through a world of moss sheep, ruined towers and dark humor.
+</p>
+
+<p>
+<strong>
+<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Highland_Ring_Lake_excerpt.pdf">
+Read the excerpt · PDF
+</a>
+</strong>
+</p>
 </td>
 </tr>
+
+<tr>
+<td width="170" valign="top">
+<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Sporestar_II.pdf">
+<img src="writing/Sporestar_II.png" alt="Sporestar II — cover" width="150" />
+</a>
+</td>
+
+<td valign="center">
+<h3>Sporestar II</h3>
+
+<p>
+A science-fiction novel in Chinese, with an English excerpt shared here.
+On a conquered ocean world, an investigator enters a dying nuclear submarine with its last surviving guide, following an anomalous sound that reaches across interstellar space.
+</p>
+
+<p>
+<strong>
+<a href="https://github.com/gugujilulu/gugujilulu/blob/main/writing/Sporestar_II.pdf">
+Read the excerpt · PDF
+</a>
+</strong>
+</p>
+</td>
+</tr>
+
 </table>
 
 <p align="center">
