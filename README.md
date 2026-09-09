@@ -79,7 +79,7 @@ Read the excerpt · PDF
 
 <tr>
 <td width="170" valign="top">
-<a href="https://raw.githubusercontent.com/gugujilulu/gugujilulu/main/writing/Sporestar_II.pdf">
+<a href="https://github.com/gugujilulu/gugujilulu/raw/refs/heads/main/writing/Sporestar_II.pdf">
 <img src="writing/Sporestar_II.png" alt="Sporestar II — cover" width="150" />
 </a>
 </td>
@@ -93,7 +93,7 @@ Another ongoing science-fiction novel in Chinese, with an English excerpt shared
 
 <p>
 <strong>
-<a href="https://raw.githubusercontent.com/gugujilulu/gugujilulu/main/writing/Sporestar_II.pdf">
+<a href="https://github.com/gugujilulu/gugujilulu/raw/refs/heads/main/writing/Sporestar_II.pdf">
 Read the excerpt · PDF
 </a>
 </strong>
