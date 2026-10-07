@@ -34,6 +34,16 @@ An independent simulated case study investigating a fraud loss-rate increase fro
 
 **[Explore the case study](https://github.com/gugujilulu/fraud-policy-decision-science) · [Open Policy Lab](https://fraud-policy-lab.gugu4-5.chatgpt.site)**
 
+### Central Asian Square-Hole Coinage Atlas
+
+**Digital heritage · data modeling · geographic visualization · public education**
+
+An independent digital heritage project making Sogdian and Central Asian coinage accessible through a multilingual map and catalogue. I designed and developed the platform, connecting **56 editorial coin families and 1,010 source records** with photographs, historical geography and traceable sources in **English, Chinese and Russian**.
+
+Alongside an invitation to speak on Sogdian numismatics at the **Vancouver coin club**, I’m seeking specialist feedback and exploring collaboration with **Zeno and cultural institutions in China**. The project supports cultural education and comparative research, with the aim of contributing to numismatics in Canada.
+
+**[Explore the repository](https://github.com/gugujilulu/Sogdian-coins-website) · [Open the live atlas](https://sogdian-cash-atlas.gugu4-5.chatgpt.site)**
+
 ### Risk Operations & Analytics Systems — Ping An Finserve
 
 **Product management · nationwide debt-collection operations · structured workflows · analytics systems**
