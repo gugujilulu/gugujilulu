@@ -3,87 +3,65 @@
 </p>
 
 <p align="center">
-  <strong>Data Scientist / Data Analyst · UBC Master of Data Science</strong><br />
-  Vancouver, BC · Authorized to work in Canada
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/" title="LinkedIn"><img src="assets/linkedin.svg" width="32" height="32" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;
-  <a href="mailto:zhaoyifu88@outlook.com" title="Email"><img src="assets/email.svg" width="32" height="32" alt="Email" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/" title="LinkedIn"><img src="assets/linkedin.svg" width="32" height="32" alt="LinkedIn" /></a>   
+  <a href="mailto:zhaoyifu88@outlook.com" title="Email"><img src="assets/email.svg" width="32" height="32" alt="Email" /></a>   
   <a href="https://github.com/gugujilulu/healthcare-risk-model-validation" title="Featured technical project"><img src="assets/github.svg" width="32" height="32" alt="Featured technical project" /></a>
 </p>
 
 ## Focus
 
-My route into data science runs through **industrial design, product management and financial risk operations**. I spent two years at **Ping An Finserve** building systems for nationwide collection operations, then completed a **Master of Data Science at UBC**, with a breast cancer risk-model validation capstone at **BC Cancer**.
+I work across **data science, analytics engineering, machine learning validation, and risk analytics**, with experience spanning healthcare modeling and large-scale operational systems.
 
-I work across **data analysis, machine learning validation, analytics engineering and risk analytics**. I’m interested in the whole journey from data to action: defining a useful metric, finding what drives it, testing a proposed change and building something people can use. My work includes healthcare modeling, fraud-policy experiments, operational dashboards and strategy systems.
+My recent technical work focuses on model evaluation, calibration, temporal validation, local model updating, reproducible analysis, and data-quality controls. Earlier industry work at **Ping An Finserve** focused on structured risk operations, strategy systems, analytics workflows, and product management across nationwide financial portfolios.
 
-I also study ancient coins and write fiction. Both have a substantial place here: a multilingual Central Asian coinage atlas that I designed and developed, and two novels that take my imagination somewhere very different from a spreadsheet.
-
-**Python · SQL · R · scikit-learn · LightGBM · Tableau · Power BI · Excel · Git**
-
-**Model Validation · Calibration · A/B Testing · Data Modeling · Risk Analytics · Reproducible Pipelines**
+**Python · SQL · R · scikit-learn · LightGBM · Model Validation · Calibration · Data Modeling · Risk Analytics · Reproducible Pipelines**
 
 ## Selected Work
 
 ### Healthcare Risk Model Validation
 
-**BC Cancer / UBC MDS · 438,571 screening exams · 1–5 year risk prediction**
+**External validation · calibration · local model updating · robustness · temporal validation**
 
-I evaluated **Mirai**, a breast cancer risk model, on a provincial screening dataset covering up to **438,571 eligible exams**. The work began as my **BC Cancer / UBC MDS capstone** and continued through independent extensions into local model updating and future-period validation.
-
-I built the analysis around the details that determine how much a result means: patient-level cohorts, follow-up eligibility, repeated exams, feature availability and the timing of information. The evaluation covered discrimination, calibration, patient-cluster bootstrap, subgroup analysis, first-exam sensitivity analysis, leakage auditing and decision-curve analysis across **five prediction horizons**.
-
-The repository brings together the evidence, technical documentation and a runnable reconstruction, including tests of whether local model updating carries its gains into a later screening period.
+Public-safe evidence package and runnable reconstruction of breast cancer risk-model validation work originating from my **BC Cancer / UBC MDS capstone**, with later independent extensions. The retrospective analysis covered up to **438,571 eligible screening exams** across **1–5 year cumulative risk horizons** and included discrimination, calibration, patient-cluster bootstrap, subgroup analysis, first-exam sensitivity analysis, leakage auditing, decision-curve analysis, and future-period temporal validation.
 
 **[Explore the repository →](https://github.com/gugujilulu/healthcare-risk-model-validation)**
 
 ### Fraud Policy Decision Science
 
-**SQL & Python · randomized policy evaluation · risk economics · interactive Policy Lab**
+**Causal diagnosis · randomized policy evaluation · risk economics · adaptive decisions**
 
-I built this simulated case study around a fraud loss-rate increase from **0.32% to 0.47%**, tracing the evidence through payment routing, a randomized authentication intervention, cross-channel displacement and recovery congestion.
-
-The analysis connects **SQL cohort queries, Python simulations and intent-to-treat evaluation** with the economics of a policy decision. Authentication changes fraud losses, transaction completion and the workload reaching recovery teams; all three affect the value of the intervention.
-
-The interactive **Policy Lab** contains **135 precomputed scenarios** for exploring recovery capacity, evidence delays and displacement assumptions. It also examines when adaptive rules earn their added complexity—and when a fixed policy performs just as well or better.
+An independent simulated case study investigating a fraud loss-rate increase from 0.32% to 0.47%. I follow the evidence from payment routing and a randomized authentication intervention to cross-channel displacement and recovery congestion. The runnable analysis compares policy value, including cases where adaptive rules tie or underperform fixed policies.
 
 **[Explore the case study](https://github.com/gugujilulu/fraud-policy-decision-science) · [Open Policy Lab](https://fraud-policy-lab.gugu4-5.chatgpt.site)**
 
 ### Central Asian Square-Hole Coinage Atlas
 
-**Independent design & development · multilingual data platform · historical geography**
+**Digital heritage · data modeling · geographic visualization · public education**
 
-Ancient coins have been part of my life for six years. With this project, I turned that interest into a platform where people can move between **a coin, its historical geography and the sources behind its identification**.
+An independent digital heritage project making Sogdian and Central Asian coinage accessible through a multilingual map and catalogue. I designed and developed the platform, connecting **56 editorial coin families and 1,010 source records** with photographs, historical geography and traceable sources in **English, Chinese and Russian**.
 
-I designed and developed a multilingual map and catalogue connecting **56 editorial coin families and 1,010 source records**, with photographs, historical geography and traceable sources in **English, Chinese and Russian**. The work combines data modeling, source reconciliation, geographic visualization and interface design around a specialist subject I know firsthand.
-
-I’ve been invited to speak on Sogdian numismatics at the **Vancouver coin club**, and I’m seeking specialist feedback and exploring collaboration with **Zeno and cultural institutions in China**. I want the atlas to become a useful resource for cultural education and comparative research, and to contribute to numismatics in Canada.
+Alongside an invitation to speak on Sogdian numismatics at the **Vancouver coin club**, I’m seeking specialist feedback and exploring collaboration with **Zeno and cultural institutions in China**. The project supports cultural education and comparative research, with the aim of contributing to numismatics in Canada.
 
 **[Explore the repository](https://github.com/gugujilulu/Sogdian-coins-website) · [Open the live atlas](https://sogdian-cash-atlas.gugu4-5.chatgpt.site)**
 
 ### Risk Operations & Analytics Systems — Ping An Finserve
 
-**Two years in product management · nationwide financial operations · measurable workflow improvements**
+**Product management · nationwide debt-collection operations · structured workflows · analytics systems**
 
-At **Ping An Finserve’s Risk Asset Management Center**, I worked on **CMP2.0** and **Tianshu**, supporting collection operations across credit-card, consumer-loan, retail-finance and mortgage portfolios.
+As a Product Manager in the Risk Asset Management Center, I worked on **CMP2.0** and **Tianshu**, supporting collection operations across credit-card, consumer-loan, retail-finance, and mortgage portfolios. The work covered spreadsheet-to-system migration, automated operational logging, differentiated workflows across business lines, intelligent dialing strategies, analytics dashboards, strategy middleware, tag and permission models, and execution channels including calls and SMS.
 
-I led the cross-business rollout of CMP2.0, moving collection workflows from spreadsheets into a shared operational system. The digitized workflows saved approximately **two hours per collector per day** and reduced customer complaints by **50%**. I also built operational KPI dashboards and automated reporting for performance, compliance and capacity monitoring, and conducted A/B testing of customer-service changes.
-
-The systems work covered automated operational logging, differentiated workflows across business lines, intelligent dialing strategies, strategy middleware, tag and permission models, and execution through calls and SMS.
-
-This is where much of my interest in analytics took shape: working with the teams who use the numbers, translating business strategies into system behavior and seeing the consequences in daily operations.
+These projects provide the industry and operational context behind my current work in data science: how analytical outputs connect with data structures, workflows, decision logic, and real operating constraints.
 
 ## Professional Context
 
-**Healthcare & ML validation** — external validation, calibration, local model updating, uncertainty estimation, robustness and temporal validation  
-**Risk & business analytics** — KPI dashboards, A/B testing, automated reporting, financial operations and policy evaluation  
-**Platform product systems** — Ping An strategy and operations platforms, with earlier experience at Qunar and Lilith Games across booking, administration and internal operational tooling
+**Healthcare & ML validation** — external validation, calibration, model updating, robustness, temporal validation  
+**Risk & operational analytics** — structured workflows, strategy systems, analytics dashboards, financial operations  
+**Platform product systems** — earlier work at Qunar and Lilith Games across booking, administration, and internal operational tooling
 
 ## Writing
 
 <table>
+
 <tr>
 <td width="170" valign="top">
 <a href="https://gugujilulu.github.io/gugujilulu/writing/Highland_Ring_Lake_excerpt.pdf">
@@ -132,9 +110,9 @@ Read the excerpt · PDF
 </p>
 </td>
 </tr>
+
 </table>
 
 <p align="center">
-  <a href="mailto:zhaoyifu88@outlook.com">zhaoyifu88@outlook.com</a> · <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/">LinkedIn</a><br />
-  <sub>Data Science · Business Analytics · Healthcare Data · Risk Analytics · Analytical Systems</sub>
+  <sub>Data Science · Analytics Engineering · Healthcare Data · Risk Analytics · Reproducible Analytical Systems</sub>
 </p>
