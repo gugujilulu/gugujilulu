@@ -9,76 +9,89 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/yifu-zhao-62b0a0368/" title="LinkedIn"><img src="assets/linkedin.svg" width="32" height="32" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;
   <a href="mailto:zhaoyifu88@outlook.com" title="Email"><img src="assets/email.svg" width="32" height="32" alt="Email" /></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/gugujilulu/healthcare-risk-model-validation" title="Featured technical project"><img src="assets/github.svg" width="32" height="32" alt="Featured technical project" /></a>
+  <a href="https://github.com/gugujilulu/healthcare-risk-model-validation" title="Featured technical project"><img src="assets/github.svg" width="32" height="32" alt="GitHub" /></a>
 </p>
 
 ## Focus
 
-I work across **data science, analytics engineering, machine learning validation, and risk analytics**, with experience spanning healthcare modeling and large-scale operational systems.
+I use **Python and SQL** to build data pipelines, evaluate predictive models, investigate business performance, and turn analytical results into dashboards and decision tools. My work spans **data science, analytics engineering, machine learning validation, and risk analytics**.
 
-My recent technical work focuses on model evaluation, calibration, temporal validation, local model updating, reproducible analysis, and data-quality controls. Earlier industry work at **Ping An Finserve** focused on structured risk operations, strategy systems, analytics workflows, and product management across nationwide financial portfolios.
+My recent projects include a **pandas/NumPy validation pipeline for approximately 438,000 breast screening exams**, **logistic regression and LightGBM model updating**, and a **SQL/Python fraud-policy analysis with an interactive scenario explorer**. Earlier work at **Ping An Finserve** combined operational analytics, KPI reporting, A/B testing, and product management for nationwide financial systems.
 
-My background spans **industrial design, product management, and data science**. I have worked on both the analytical questions and the systems through which people act on the answers: defining metrics, evaluating interventions, designing operational workflows, and developing tools for exploring the evidence.
+My background spans **industrial design, product management, and data science**. I connect analytical work with its practical use: defining metrics, structuring data, evaluating interventions, designing operational workflows, and building tools that help people explore and act on results.
 
-**Python · SQL · R · scikit-learn · LightGBM · Model Validation · Calibration · Data Modeling · Risk Analytics · Reproducible Pipelines**
+**Python · SQL · R · pandas · NumPy · scikit-learn · LightGBM · Power BI · Tableau · Git**
 
-| Capability | Methods and tools used in my work |
+| Capability | Methods and tools |
 | --- | --- |
-| **Machine learning & model validation** | Regression, gradient boosting, scikit-learn, LightGBM, ROC AUC, Brier score, calibration, local model updating, temporal validation |
-| **Statistics & experimentation** | A/B testing, randomized intervention evaluation, intent-to-treat analysis, patient-cluster bootstrap, subgroup and sensitivity analysis |
-| **Data analysis & quality** | SQL, Python/pandas/NumPy, R, relational data modeling, cohort construction, feature engineering, metric definition, leakage auditing |
-| **BI & operational analytics** | Tableau, Power BI, Excel, KPI dashboards, automated reporting, performance and capacity monitoring |
-| **Reproducible analytical systems** | Git, documented pipelines, structured result tables, runnable analyses, source provenance and reconciliation |
+| **Programming & data preparation** | Python/pandas/NumPy, R, SQL joins, CTEs, window functions and query optimization; cleaning, integration, cohort construction and feature engineering |
+| **Machine learning & validation** | scikit-learn, logistic regression, LightGBM, ROC AUC, Brier score, calibration, external and temporal validation, leakage auditing |
+| **Statistics & experimentation** | A/B testing, hypothesis testing, confidence intervals, intent-to-treat analysis, patient-cluster bootstrap, subgroup and sensitivity analysis |
+| **BI & operational analytics** | Power BI (DAX, Power Query), Tableau, Excel (PivotTables, XLOOKUP), KPI dashboards, scheduled reporting and capacity monitoring |
+| **Data platforms & modeling** | MySQL, dbt, Snowflake, Databricks, Azure, Microsoft Fabric; relational and dimensional modeling, ETL/ELT and data warehousing |
+| **Reproducible analytical systems** | Git, Jupyter, automated tests, GitHub Actions, documented pipelines, structured result tables, source provenance and reconciliation |
 
 ## Selected Work
 
 ### Healthcare Risk Model Validation
 
-**External validation · calibration · local model updating · robustness · temporal validation**
+**Python · pandas · NumPy · scikit-learn · LightGBM · Model calibration · Temporal validation**
 
-Public-safe evidence package and runnable reconstruction of breast cancer risk-model validation work originating from my **BC Cancer / UBC MDS capstone**, with later independent extensions. The retrospective analysis covered up to **438,571 eligible screening exams** across **1–5 year cumulative risk horizons** and included discrimination, calibration, patient-cluster bootstrap, subgroup analysis, first-exam sensitivity analysis, leakage auditing, decision-curve analysis, and future-period temporal validation.
+Breast cancer risk-model validation originating from my **BC Cancer / UBC MDS capstone**, with later independent extensions. The retrospective analysis covered up to **438,571 eligible screening exams** across **1–5 year cumulative risk horizons**.
 
-I built Python workflows for patient-level cohort construction, follow-up eligibility, outcome definition, and metric estimation, with structured result tables and calibration visualizations prepared for clinical and biostatistical review. Later independent work used **logistic regression and LightGBM** for prediction-level model updating, comparing patient-level held-out results with future-period performance.
+I built a **Python preprocessing and validation pipeline using pandas and NumPy**, constructing patient-level cohorts and splits, cumulative outcomes, and follow-up eligibility controls. The workflow evaluated discrimination and calibration using ROC AUC, Brier score, expected-to-observed ratio, and calibration slope/intercept, with structured tables and visualizations prepared for clinical and biostatistical review.
+
+I independently extended the work through **feature engineering and prediction-level model updating using logistic regression and LightGBM**. Exploratory patient-level held-out AUCs reached **0.774–0.835**; future-period testing narrowed gains over Original Mirai to **0.007–0.017**. Patient-cluster bootstrap, first-exam sensitivity analysis, and feature-availability audits examined uncertainty, repeated observations, and prediction-time leakage.
+
+The public repository combines aggregate project evidence with a **runnable synthetic reconstruction**, modular analysis code, automated tests, and GitHub Actions that run the tests and complete pipeline.
 
 **[Explore the repository →](https://github.com/gugujilulu/healthcare-risk-model-validation)**
 
 ### Fraud Policy Decision Science
 
-**Causal diagnosis · randomized policy evaluation · risk economics · adaptive decisions**
+**SQL · Python · Cohort analysis · Intent-to-treat evaluation · Policy simulation**
 
-An independent simulated case study investigating a fraud loss-rate increase from **0.32% to 0.47%**. I follow the evidence from payment routing and a randomized authentication intervention to cross-channel displacement and recovery congestion. The runnable analysis compares policy value, including cases where adaptive rules tie or underperform fixed policies.
+An independent simulated case study investigating a fraud loss-rate increase from **0.32% to 0.47%**. The analysis connects payment routing and randomized authentication with transaction completion, cross-channel fraud displacement, and recovery congestion.
 
-The work combines **SQL cohort analysis, Python simulation, and intent-to-treat evaluation**, accounting for loss-recognition timing and cohort maturity. The interactive **Policy Lab** contains **135 precomputed scenarios**, connecting fraud loss and transaction completion with recovery capacity, evidence delays, and displacement assumptions.
+I built **SQL cohort analyses using CTEs and conditional aggregation**, alongside Python simulations, to distinguish changes in risk from loss-recognition timing and incomplete follow-up. **Intent-to-treat evaluation** measures authentication effects across all assigned attempts, including transactions that are abandoned or declined.
+
+The interactive **Policy Lab** contains **135 precomputed scenarios**, comparing authentication policies under different recovery capacities, evidence delays, and displacement assumptions. The analysis also identifies conditions where adaptive rules tie or underperform fixed policies.
+
+The repository includes a **packaged Python analysis, configuration-driven execution, automated tests, dependency locks, and GitHub Actions** that rebuild and validate the outputs. Tests check experimental estimators, queue balances, capacity constraints, and financial accounting identities.
 
 **[Explore the case study](https://github.com/gugujilulu/fraud-policy-decision-science) · [Open Policy Lab](https://fraud-policy-lab.gugu4-5.chatgpt.site)**
 
 ### Central Asian Square-Hole Coinage Atlas
 
-**Digital heritage · data modeling · geographic visualization · public education**
+**Python · SQL/SQLite · React · TypeScript · MapLibre GL · Data provenance**
 
-An independent digital heritage project making Sogdian and Central Asian coinage accessible through a multilingual map and catalogue. I designed and developed the platform, connecting **56 editorial coin families and 1,010 source records** with photographs, historical geography and traceable sources in **English, Chinese and Russian**.
+An independent digital heritage project making Sogdian and Central Asian coinage accessible through a multilingual map and searchable catalogue. I designed and developed the platform, connecting **56 editorial coin families and 1,010 source records** with photographs, historical geography, and traceable sources in **English, Chinese and Russian**.
 
-The data work includes source-identity reconciliation, image provenance, stable record identifiers, and the relationships between specimens, editorial families, and geographic context. My knowledge of ancient coins informs the catalogue structure, the interpretation of source records, and how the material is presented to readers.
+The data workflow uses **Python collection, validation, and export scripts**, a **relational SQLite research model**, and a normalized JSON export for the application. It handles stable identifiers, source-identity reconciliation, image provenance, and relationships between physical specimens, source records, editorial classifications, and historical locations.
 
-Alongside an invitation to speak on Sogdian numismatics at the **Vancouver coin club**, I’m seeking specialist feedback and exploring collaboration with **Zeno and cultural institutions in China**. The project supports cultural education and comparative research, with the aim of contributing to numismatics in Canada.
+The application uses **React, TypeScript, and MapLibre GL** for combined search and filtering, geographic exploration, image viewing, multilingual navigation, and responsive detail panels. My knowledge of ancient coins informs the data model, source interpretation, and presentation of uncertain or competing attributions.
+
+Alongside an invitation to speak on Sogdian numismatics at a **Vancouver coin club**, I’m seeking specialist feedback and exploring collaboration with **Zeno and cultural institutions in China**. The project supports cultural education and comparative research, with the aim of contributing to numismatics in Canada.
 
 **[Explore the repository](https://github.com/gugujilulu/Sogdian-coins-website) · [Open the live atlas](https://sogdian-cash-atlas.gugu4-5.chatgpt.site)**
 
 ### Risk Operations & Analytics Systems — Ping An Finserve
 
-**Product management · nationwide debt-collection operations · structured workflows · analytics systems**
+**KPI dashboards · Reporting automation · A/B testing · Workflow digitization · Strategy systems**
 
-As a Product Manager in the Risk Asset Management Center, I worked on **CMP2.0** and **Tianshu**, supporting collection operations across credit-card, consumer-loan, retail-finance, and mortgage portfolios. The work covered spreadsheet-to-system migration, automated operational logging, differentiated workflows across business lines, intelligent dialing strategies, analytics dashboards, strategy middleware, tag and permission models, and execution channels including calls and SMS.
+As a **Product Manager in the Risk Asset Management Center**, I worked on **CMP2.0** and **Tianshu**, supporting nationwide collection operations across credit-card, consumer-loan, retail-finance, and mortgage portfolios.
 
-I led the cross-business rollout of CMP2.0, with digitized workflows saving approximately **two hours per collector per day** and reducing customer complaints by **50%**. My analytical work included operational KPI dashboards, automated scheduled reporting for performance, compliance, and capacity monitoring, and A/B testing of customer-service changes.
+I led the cross-business rollout of **CMP2.0**, migrating collection workflows from spreadsheets into a centralized platform. The work included automated operational logging, differentiated workflows across business lines, intelligent dialing strategies, and **Sensors Data Analytics dashboards**. Digitized workflows saved approximately **two hours per collector per day** and reduced customer complaints by **50%**.
 
-These projects provide the industry and operational context behind my current work in data science: how analytical outputs connect with data structures, workflows, decision logic, and real operating constraints.
+I built **business intelligence dashboards and automated scheduled reporting**, defining KPIs for performance, compliance, and capacity monitoring and delivering customized reports for credit-card and mortgage operations. I also conducted **A/B testing of customer-service changes** to inform product iteration.
+
+For **Tianshu**, I translated collection strategies into system requirements and execution rules, designing tag libraries, permission models, and strategy-management modules supporting calls, SMS, and intelligent dialing. This work connects my current analytical projects with experience delivering systems used in day-to-day financial operations.
 
 ## Professional Context
 
-**Healthcare & ML validation** — external validation, calibration, model updating, robustness, temporal validation  
-**Risk & operational analytics** — structured workflows, strategy systems, analytics dashboards, financial operations  
-**Platform product systems** — earlier work at Qunar and Lilith Games across booking, administration, and internal operational tooling
+**Healthcare & ML validation** — Python data preparation, cohort construction, calibration, feature engineering, model updating, robustness and temporal validation  
+**Risk & operational analytics** — SQL cohort analysis, experimentation, KPI dashboards, automated reporting and financial decision workflows  
+**Platform product systems** — requirements and workflow design at Ping An Finserve, Qunar and Lilith Games, spanning financial operations, international flight booking and live-game administration
 
 ## Writing
 
